@@ -8,43 +8,46 @@
   <body>
     <div class="weather-app" id="weather-app">
       <header>
-        <form class="search-city">
+        <form class="search-forcast">
           <input
             type="search"
             name="search-city"
             id="search-city"
             placeholder="Enter city"
           />
-          <input type="submit" />
+          <input type="submit" class="search-button" id="search-button" />
         </form>
         <link rel="stylesheet" href="src/style.css" />
       </header>
       <main>
         <div class="weather-web-information" id="weather-app-data">
-          <h1 class="city" id="city">Paris</h1>
           <div class="extra-info">
+            <h1 class="city" id="city">Paris</h1>
             <div class="today-date" id="today-date">
-              <span class="week-day" id="week-day">Thursday</span>
-              <span class="current-hour" id="current-hour">18</span>
-              :
-              <span class="current-minute" id="current-minute">47</span>
-              ,
-              <span class="today-weather-condition" id="today-weather-condition"
-                >scattered clouds</span
-              >
-            </div>
-            <div class="humidity-wind" id="humidity-wind">
-              Humidity:
-              <span class="humidity-percentage">48</span>
-              %, Wind:
-              <span class="wind-speed" id="wind-speed">3.6</span>
-              km/h
+              <p>
+                <span class="week-day" id="week-day">Thursday</span>
+                <span class="current-hour" id="current-hour">18</span>
+                :
+                <span class="current-minute" id="current-minute">47</span>
+                ,
+                <span
+                  class="today-weather-condition"
+                  id="today-weather-condition"
+                  >scattered clouds</span
+                >
+                <br />
+                Humidity:
+                <strong class="humidity-percentage">48</strong>
+                <strong>%</strong>, Wind:
+                <strong class="wind-speed" id="wind-speed">3.6</strong>
+                <strong>km/h</strong>
+              </p>
             </div>
           </div>
           <div class="current-temperature" id="current-temperature">
-            <span class="icon" id="icon">🌥️</span>
+            <span class="icon" id="icon"></span>
             <span class="temp" id="temp">21</span>
-            °C
+            <span class="unit" id="unit">°C</span>
           </div>
         </div>
       </main>
